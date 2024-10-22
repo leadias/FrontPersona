@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="side side-left">
+        <h2>Crear Persona</h2>
+        <br>
+        <div class="row flex-between">
+            <div class="form-group">
+                <input type="text"  [(ngModel)]="cedula" id="cedula" name="cedula"  class="form-control" placeholder="Cedula..." >
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <input type="text"  [(ngModel)]="nombre" id="nombre" name="nombre"  class="form-control" placeholder="Nombre..." >
+        </div>
+        <br>
+        <div class="form-group">
+            <input type="text"  [(ngModel)]="apellido" id="apellido" name="apellido"  class="form-control" placeholder="Apellido..." >
+        </div>
+        <br>
+        <div class="inputicon" >
+            <div class="form-group">
+                 <input type="text"  [(ngModel)]="celular" id="celular" name="celular"  class="form-control" placeholder="Celular..." >
+                  <button (click)="createItem()" style="border: rgb(21, 124, 214);" type="button">+</button>
+            </div>
+       </div>
+       <br>
+       <app-check [lists]="lists" ></app-check>
+</div>
+</div>
+
